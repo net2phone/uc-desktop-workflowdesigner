@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:IntegraDesigner"
+                    xmlns:c="clr-namespace:IntegraDesigner.Controls">
+
+    <s:Toolbox x:Key="General" ItemSize="55,55">
+        <ItemsControl.Items>
+
+
+
+            <Image Source="/Resources/Activities/General/Authenticate.png" ToolTip="{Binding Activity.Description}" Tag="Authenticate" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/CURL.png" ToolTip="{Binding Activity.Description}" Tag="CURL" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/NoOp.png" ToolTip="{Binding Activity.Description}" Tag="NoOp" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/SendURL.png" ToolTip="{Binding Activity.Description}" Tag="SendURL" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/System.png" ToolTip="{Binding Activity.Description}" Tag="SystemExec" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/VMAutenticate.png" ToolTip="{Binding Activity.Description}" Tag="VMAutenticate" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/Wait.png" ToolTip="{Binding Activity.Description}" Tag="Wait" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/NoCDR.png" ToolTip="{Binding Activity.Description}" Tag="NoCDR" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/ForkCDR.png" ToolTip="{Binding Activity.Description}" Tag="ForkCDR" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/UserEvent.png" ToolTip="{Binding Activity.Description}" Tag="UserEvent" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/Log.png" ToolTip="{Binding Activity.Description}" Tag="Log" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/AGI.png" ToolTip="{Binding Activity.Description}" Tag="AGI" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/PauseQueueMember.png" ToolTip="{Binding Activity.Description}" Tag="PauseQueueMember" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/UnPauseQueueMember.png" ToolTip="{Binding Activity.Description}" Tag="UnPauseQueueMember" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/General/MessageSend.png" ToolTip="{Binding Activity.Description}" Tag="MessageSend" IsHitTestVisible="false"></Image>
+         
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+
+</ResourceDictionary>

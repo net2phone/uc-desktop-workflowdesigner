@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:IntegraDesigner"
+                    xmlns:c="clr-namespace:IntegraDesigner.Controls">
+
+    <s:Toolbox x:Key="Recording" ItemSize="55,55">
+        <ItemsControl.Items>
+
+            <Image Source="/Resources/Activities/Recording/ChanSpy.png" ToolTip="{Binding Activity.Description}" Tag="ChanSpy" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Recording/ExtenSpy.png" ToolTip="{Binding Activity.Description}" Tag="ExtenSpy" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Recording/MixMonitor.png" ToolTip="{Binding Activity.Description}" Tag="MixMonitor" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Recording/StopMixMonitor.png" ToolTip="{Binding Activity.Description}" Tag="StopMixMonitor" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Recording/Monitor.png" ToolTip="{Binding Activity.Description}" Tag="Monitor" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Recording/StopMonitor.png" ToolTip="{Binding Activity.Description}" Tag="StopMonitor" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Recording/record.png" ToolTip="{Binding Activity.Description}" Tag="Record" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Recording/ControlPlayback.png" ToolTip="{Binding Activity.Description}" Tag="ControlPlayback" IsHitTestVisible="false"></Image>
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+
+</ResourceDictionary>

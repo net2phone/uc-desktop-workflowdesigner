@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.MATHProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblres" Width="104" >Result VarName:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtres" Width="231"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblval1" Width="104" >Value:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtval1" Width="123"  />
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lbloper" Width="70"  >Operator:</Label>
+            <ComboBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtoper" Width="42" >
+                <ComboBoxItem>+</ComboBoxItem>
+                <ComboBoxItem>-</ComboBoxItem>
+                <ComboBoxItem>/</ComboBoxItem>
+                <ComboBoxItem>*</ComboBoxItem>
+                <ComboBoxItem>%</ComboBoxItem>
+                <ComboBoxItem><![CDATA[<]]></ComboBoxItem>
+                <ComboBoxItem><![CDATA[>]]></ComboBoxItem>
+                <ComboBoxItem><![CDATA[<=]]></ComboBoxItem>
+                <ComboBoxItem><![CDATA[>=]]></ComboBoxItem>
+                <ComboBoxItem>==</ComboBoxItem>
+            </ComboBox>
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblval2" Width="104" >Value:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtval2" Width="123"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lbltype" Width="104"  >Result Type:</Label>
+            <ComboBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txttype" Width="42" >
+                <ComboBoxItem Selector.IsSelected="True">f</ComboBoxItem>
+                <ComboBoxItem>i</ComboBoxItem>
+                <ComboBoxItem>h</ComboBoxItem>
+                <ComboBoxItem>c</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:" Width="102"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,111 @@
+﻿<Window x:Class="IntegraDesigner.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:s="clr-namespace:IntegraDesigner"
+        xmlns:c="clr-namespace:IntegraDesigner.Controls"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="IntegraDesigner"
+        Height="600" Width="1121" 
+        Icon="Resources/Activities/General/app.ico"
+        Closed="Window_Closed"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Background="{DynamicResource LightBrush}"
+>
+
+    <Window.Resources>
+        <ContextMenu x:Key="DesignerCanvasContextMenu">
+            <MenuItem Header="Paste" Command="{x:Static ApplicationCommands.Paste}">
+                <MenuItem.Icon>
+                    <Image Source="Resources/Images/Paste.png" Width="16"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Header="Select All" Command="{x:Static s:DesignerCanvas.SelectAll}"/>
+        </ContextMenu>
+        <LinearGradientBrush x:Key="BlackBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF000000" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="LightBrushCeleste" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF000000" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset="1"/>
+            <GradientStop Color="#FFC1C5FB" Offset="0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="LightBrushCeleste2" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF000000" Offset="0"/>
+            <GradientStop Color="#FFFFFFFF" Offset="1"/>
+            <GradientStop Color="#FFC1E5FB" Offset="0"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="IntregraSilver" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFCDC4C4" Offset="0"/>
+            <GradientStop Color="#FFFFFBFB" Offset="1"/>
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="IntegraSilver" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFCCC4C4" Offset="0"/>
+            <GradientStop Color="#FFFFFBFB" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Resources>
+
+    <Grid x:Name="TheGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl Content="{StaticResource MyToolbar}" Background="{DynamicResource WindowBackgroundBrush}"/>
+
+        <Grid Grid.Row="1" Margin="5,10,0,0" Background="{x:Null}" Grid.RowSpan="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <!-- Toolbox -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,0,-17"  >
+                <StackPanel Margin="10,0,5,0" Background="{x:Null}" >
+                    <Expander Header="Calls" Content="{StaticResource Calls}" Background="{DynamicResource IntregraSilver}" />
+                    <Expander Header="Variables" Content="{StaticResource CVariables}" Background="{DynamicResource IntregraSilver}" />
+                    <Expander Header="General" Content="{StaticResource General}" Background="{DynamicResource IntregraSilver}"/>
+                    <Expander Header="Recording" Content="{StaticResource Recording}" Background="{DynamicResource IntregraSilver}" />
+                    <Expander Header="Sounds" Content="{StaticResource Sounds}" Background="{DynamicResource IntregraSilver}" />
+                    <Expander Header="Integra" Content="{StaticResource Integra}" Background="{DynamicResource IntregraSilver}" />
+                    <Expander Header="Utils" Content="{StaticResource Utils}" Background="{DynamicResource IntregraSilver}" />
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Designer -->
+            <GroupBox  x:Name="FlowHeader" Header="Flow" Grid.Column="1" Margin="0,0,0,-13" BorderBrush="{DynamicResource IntregraSilver}" Background="{DynamicResource ToolbarPressedBrush}" >
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" 
+                      VerticalScrollBarVisibility="Auto">
+                    <s:DesignerCanvas Focusable="true" x:Name="MyDesigner" 
+                            Background="{StaticResource WindowBackgroundBrush}"
+                            Margin="10" FocusVisualStyle="{x:Null}"
+                            ContextMenu="{StaticResource DesignerCanvasContextMenu}">
+                    </s:DesignerCanvas>
+                </ScrollViewer>
+            </GroupBox>
+
+
+            <GroupBox Header="Properties" Grid.Row="1" Grid.RowSpan="1" Grid.ColumnSpan="2" Margin="0,21,0,0" BorderBrush="{DynamicResource IntegraSilver}">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
+                    <StackPanel Focusable="true" x:Name="MyProperties"
+                            Background="{DynamicResource IntegraSilver}"
+                            Margin="10" FocusVisualStyle="{x:Null}"
+                     />
+                </ScrollViewer>
+            </GroupBox>
+            <GridSplitter HorizontalAlignment="Stretch" Margin="0,17,8,0" VerticalAlignment="Top" Height="12" Grid.Row="1" Grid.ColumnSpan="2">
+                <GridSplitter.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFCCC4C4" Offset="0"/>
+                        <GradientStop Color="#FFFFFBFB" Offset="1"/>
+                    </LinearGradientBrush>
+                </GridSplitter.Background>
+            </GridSplitter>
+
+        </Grid>
+    </Grid>
+</Window>

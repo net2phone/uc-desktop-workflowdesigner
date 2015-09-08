@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.QueueProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblqueue" Width="92"  >Queue Name:</Label>
+                    <ComboBox Height="23" Name="cmbqueues" Width="165" IsEditable="True" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblopt" Width="93"  >Options:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtopt" Width="90"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblurl" Width="94"  >URL:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txturl" Width="164"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblannounce" Width="95"  >Announce</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtannounce" Width="161"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lbltimeout" Width="95"   >Timeout:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txttimeout" Width="90"  />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblagi" Width="96"   >AGI:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtagi" Width="159"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblmacro" Width="97"   >Macro:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtmacro" Width="158"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblgosub" Width="96"  >GoSub:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtgosub" Width="159"  />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblrule" Width="98"  >Rule:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtrule" Width="156"  />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblpos" Width="98"  >Position:</Label>
+                    <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtpos" Width="156"  />
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+        
+    </StackPanel>
+   
+
+
+</UserControl>

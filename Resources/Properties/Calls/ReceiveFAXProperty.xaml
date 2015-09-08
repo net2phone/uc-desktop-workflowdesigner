@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.ReceiveFAXProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="Description:"></TextBlock>
+        <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+    </StackPanel>
+
+</UserControl>

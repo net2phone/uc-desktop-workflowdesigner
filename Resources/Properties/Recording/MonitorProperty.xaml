@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.MonitorProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblext" Width="88" >File Extension:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtext" Width="233"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblbase" Width="88" >Base File:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtbase" Width="234"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblflags" Width="86" >Flags:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtflags" Width="234"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:" Width="76"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

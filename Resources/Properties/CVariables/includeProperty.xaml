@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.includeProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Width="530">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblvarn" Width="124">Context to Include:</Label>
+            <ComboBox Canvas.Left="79" Canvas.Top="59" Height="23"  Width="206" IsEditable="True" x:Name="cmbcontext" >
+                <ComboBoxItem>default</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

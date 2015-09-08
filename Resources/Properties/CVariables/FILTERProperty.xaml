@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.FILTERProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblvarn" Width="205">Result VarName:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtvarn" Width="438" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblallow" Width="205">Allowed Chars:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtallow" Width="437"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblvar" Width="205">Variable:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtvar" Width="437"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:" Width="197"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

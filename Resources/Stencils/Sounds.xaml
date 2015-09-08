@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:IntegraDesigner"
+                    xmlns:c="clr-namespace:IntegraDesigner.Controls">
+
+    <s:Toolbox x:Key="Sounds" ItemSize="55,55">
+        <ItemsControl.Items>
+
+            <Image Source="/Resources/Activities/Sounds/BackGround.png" ToolTip="{Binding Activity.Description}" Tag="BackGround" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/PlayBack.png" ToolTip="{Binding Activity.Description}" Tag="PlayBack" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/SayAlpha.png" ToolTip="{Binding Activity.Description}" Tag="SayAlpha" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/SayDigits.png" ToolTip="{Binding Activity.Description}" Tag="SayDigits" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/SayNumber.png" ToolTip="{Binding Activity.Description}" Tag="SayNumber" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/SayPhonetic.png" ToolTip="{Binding Activity.Description}" Tag="SayPhonetic" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/SayUnixTime.png" ToolTip="{Binding Activity.Description}" Tag="SayUnixTime" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/PlayTones.png" ToolTip="{Binding Activity.Description}" Tag="PlayTones" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/StopPlayTones.png" ToolTip="{Binding Activity.Description}" Tag="StopPlayTones" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/StartMusicOnHold.png" ToolTip="{Binding Activity.Description}" Tag="StartMusicOnHold" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/StopMusicOnHold.png" ToolTip="{Binding Activity.Description}" Tag="StopMusicOnHold" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Sounds/MusicOnHold.png" ToolTip="{Binding Activity.Description}" Tag="MusicOnHold" IsHitTestVisible="false"></Image>
+        </ItemsControl.Items>
+    </s:Toolbox>
+
+</ResourceDictionary>

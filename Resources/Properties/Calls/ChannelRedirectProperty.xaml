@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.ChannelRedirectProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblchan" Width="74">Channel:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23"  Width="226" x:Name="txtchan" ></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblcontext" Width="74">Context:</Label>
+            <ComboBox Canvas.Left="79" Canvas.Top="59" Height="23"  Width="226" IsEditable="True" x:Name="cmbcontext" >
+                <ComboBoxItem>default</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblextension" Width="73">Extension:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtextension" Width="227"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+        <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblpri" Width="73">Priority:</Label>
+        <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtprio" Width="228"  />
+    </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

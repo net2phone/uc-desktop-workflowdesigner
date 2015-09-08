@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.RetryDialProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel Orientation="Horizontal">
+    <StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblannounce" Width="70">Announce:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtannounce" Width="190"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblsleep" Width="70">Sleep:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtsleep" Width="191" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblretries" Width="70">Retries:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtretries" Width="95"  />
+        </StackPanel>
+     </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lbltype" Width="70">Type:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txttype" Width="190"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblident" Width="70">Identifier:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtidentifier" Width="191" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lbltime" Width="70">Timeout:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txttimeout" Width="95"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblopt" Width="70">Options:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtoptions" Width="94"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblutl" Width="70">URL:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txturl" Width="190"  />
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:" Height="23"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0" Height="21"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+    
+</UserControl>

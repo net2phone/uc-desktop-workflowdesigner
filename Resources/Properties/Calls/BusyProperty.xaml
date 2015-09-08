@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.BusyProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+  
+        <StackPanel Orientation="Horizontal" Height="36" Width="577">
+            <TextBlock Text="Description:" Height="20" Width="63"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="487" Margin="10,0,0,0" Height="24"></TextBox>
+        </StackPanel>
+
+
+</UserControl>

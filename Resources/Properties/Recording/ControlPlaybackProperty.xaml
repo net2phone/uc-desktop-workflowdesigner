@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.ControlPlaybackProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblfile" Width="89" >File:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtfile" Width="300"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblskipms" Width="89" >Skip Millisecs:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtskipms" Width="157"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblff" Width="87" >Fast Forward:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtff" Width="158"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblrew" Width="88" >Rewind:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtrew" Width="156"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblstop" Width="87" >Stop:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtstop" Width="158"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblpause" Width="87" >Pause:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtpause" Width="158"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblrestart" Width="87" >Restart:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtrestart" Width="158"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblopt" Width="87" >Options:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtopt" Width="156"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:" Width="74"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

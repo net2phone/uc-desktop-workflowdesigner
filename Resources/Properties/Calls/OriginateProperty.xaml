@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.OriginateProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblvariable" Width="86" >Tech Data:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txttdata" Width="146"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblfile" Width="87" >Type:</Label>
+                <ComboBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="cmbtype" Width="145">
+                        <ComboBoxItem Content="exten" IsSelected="True"/>
+                        <ComboBoxItem Content="app" />
+                    </ComboBox>
+                </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="26" Name="lblmax" Width="88" >arg1:</Label>
+                <TextBox Canvas.Left="50" Canvas.Top="59" Height="23" Name="txtarg1" Width="143"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="26" Name="lbla" Width="89" >arg2:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtarg2" Width="143"  />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblopt" Width="65" >arg3:</Label>
+               <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtarg3" Width="141"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"></StackPanel>
+            <StackPanel Orientation="Horizontal"></StackPanel>
+            <StackPanel Orientation="Horizontal"></StackPanel>
+            
+        </StackPanel>
+
+    </Grid>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:" Height="21" Width="80"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+    
+    
+</UserControl>

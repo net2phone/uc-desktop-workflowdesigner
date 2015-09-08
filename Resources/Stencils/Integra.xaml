@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:IntegraDesigner"
+    xmlns:c="clr-namespace:IntegraDesigner.Controls">
+
+    <s:Toolbox x:Key="Integra" ItemSize="55,55">
+        <ItemsControl.Items>
+
+
+            <Image Source="/Resources/Activities/Integra/Start.png" ToolTip="{Binding Activity.Description}" Tag="StartActivity"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Integra/CDRUserField.png" ToolTip="{Binding Activity.Description}" Tag="SetCDRUserfield"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Integra/CDRama.png" ToolTip="{Binding Activity.Description}" Tag="SetCDRamaflags"  IsHitTestVisible="false"></Image>
+          
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

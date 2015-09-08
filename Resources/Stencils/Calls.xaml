@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:IntegraDesigner"
+                    xmlns:c="clr-namespace:IntegraDesigner.Controls">
+
+    <s:Toolbox x:Key="Calls" ItemSize="55,55">
+        <ItemsControl.Items>
+            <Image Source="/Resources/Activities/Calls/Answer.png" ToolTip="{Binding Activity.Description}"  Tag="Answer" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Busy.png" ToolTip="{Binding Activity.Description}" Tag="Busy"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Dial.png" ToolTip="{Binding Activity.Description}" Tag="Dial"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Flash.png" ToolTip="{Binding Activity.Description}"  Tag="Flash" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Hangup.png" ToolTip="{Binding Activity.Description}"  Tag="Hangup" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/MeetMe.png" ToolTip="{Binding Activity.Description}"  Tag="MeetMe" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Queue.png" ToolTip="{Binding Activity.Description}"  Tag="Queue" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/SetCallerPres.png" ToolTip="{Binding Activity.Description}" Tag="SetCallerPres"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/VoiceMail.png" ToolTip="{Binding Activity.Description}"  Tag="VoiceMail" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/VoiceMailMain.png" ToolTip="{Binding Activity.Description}"  Tag="VoiceMailMain" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Read.png" ToolTip="{Binding Activity.Description}" Tag="Read" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/fax.png" ToolTip="{Binding Activity.Description}" Tag="ReceiveFAX" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/faxout.png" ToolTip="{Binding Activity.Description}" Tag="SendFAX" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/CallerID.png" ToolTip="{Binding Activity.Description}" Tag="SetCallerID" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/AMD.png" ToolTip="{Binding Activity.Description}" Tag="AMD" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Volume.png" ToolTip="{Binding Activity.Description}" Tag="VOLUME" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Ringing.png" ToolTip="{Binding Activity.Description}" Tag="Ringing" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Transfer.png" ToolTip="{Binding Activity.Description}" Tag="Transfer" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Progress.png" ToolTip="{Binding Activity.Description}" Tag="Progress" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Pickup.png" ToolTip="{Binding Activity.Description}" Tag="Pickup" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/RetryDial.png" ToolTip="{Binding Activity.Description}" Tag="RetryDial" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/SendDTMF.png" ToolTip="{Binding Activity.Description}" Tag="SendDTMF" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Originate.png" ToolTip="{Binding Activity.Description}" Tag="Originate" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/DISA.png" ToolTip="{Binding Activity.Description}" Tag="DISA" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/ChannelRedirect.png" ToolTip="{Binding Activity.Description}" Tag="ChannelRedirect" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/ConfBridge.png" ToolTip="{Binding Activity.Description}" Tag="ConfBridge" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/Page.png" ToolTip="{Binding Activity.Description}" Tag="Page" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/SipAddHeader.png" ToolTip="{Binding Activity.Description}" Tag="SipAddHeader" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Calls/SipRemoveHeader.png" ToolTip="{Binding Activity.Description}" Tag="SipRemoveHeader" IsHitTestVisible="false"></Image>
+        </ItemsControl.Items>
+    </s:Toolbox>
+
+</ResourceDictionary>

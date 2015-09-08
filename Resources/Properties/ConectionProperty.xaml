@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.ConectionProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        
+      
+      
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="23" Name="lbldefaultpath" Width="83">TRUE</Label>
+                <CheckBox x:Name="chkdefault" Height="13" Canvas.Left="79" Canvas.Top="35" Width="13" Click="chkdefault_Click"></CheckBox>
+            </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="59" Height="23" Name="lbllabel" Width="83">Label</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtlabel" Width="402" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

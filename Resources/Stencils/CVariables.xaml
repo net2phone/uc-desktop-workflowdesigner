@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:IntegraDesigner"
+                    xmlns:c="clr-namespace:IntegraDesigner.Controls">
+
+    <s:Toolbox x:Key="CVariables" ItemSize="55,55">
+        <ItemsControl.Items>
+
+
+            <Image Source="/Resources/Activities/CVariables/Set.png" ToolTip="{Binding Activity.Description}" Tag="Set" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/ARRAY.png" ToolTip="{Binding Activity.Description}" Tag="ARRAY" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/While.png" ToolTip="{Binding Activity.Description}" Tag="While" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/EndWhile.png" ToolTip="{Binding Activity.Description}" Tag="EndWhile" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/Goto.png" ToolTip="{Binding Activity.Description}" Tag="Goto" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/GotoIf.png" ToolTip="{Binding Activity.Description}" Tag="GotoIf" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/GotoIfTime.png" ToolTip="{Binding Activity.Description}" Tag="GotoIfTime" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/IF.png" ToolTip="{Binding Activity.Description}" Tag="IF" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/isnull.png" ToolTip="{Binding Activity.Description}" Tag="isnull" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/language.png" ToolTip="{Binding Activity.Description}" Tag="SetLanguage" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/MOH.png" ToolTip="{Binding Activity.Description}" Tag="SetMOH" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/FILTER.png" ToolTip="{Binding Activity.Description}" Tag="FILTER" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/include.png" ToolTip="{Binding Activity.Description}" Tag="include" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/dbput.png" ToolTip="{Binding Activity.Description}" Tag="DBPut" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/dbget.png" ToolTip="{Binding Activity.Description}" Tag="DBGet" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/dbexists.png" ToolTip="{Binding Activity.Description}" Tag="DBExists" IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/CVariables/dbdelete.png" ToolTip="{Binding Activity.Description}" Tag="DBDelete" IsHitTestVisible="false"></Image>
+
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

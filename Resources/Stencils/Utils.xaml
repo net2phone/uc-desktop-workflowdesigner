@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:IntegraDesigner"
+    xmlns:c="clr-namespace:IntegraDesigner.Controls">
+
+    <s:Toolbox x:Key="Utils" ItemSize="55,55">
+        <ItemsControl.Items>
+
+
+            <Image Source="/Resources/Activities/Utils/B64Code.png" ToolTip="{Binding Activity.Description}" Tag="B64ENCODE"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/B64Decode.png" ToolTip="{Binding Activity.Description}" Tag="B64DECODE"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/cut.png" ToolTip="{Binding Activity.Description}" Tag="CUT"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/LEN.png" ToolTip="{Binding Activity.Description}" Tag="LEN"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/Fieldqty.png" ToolTip="{Binding Activity.Description}" Tag="Fieldqty"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/Math.png" ToolTip="{Binding Activity.Description}" Tag="MATH"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/Rand.png" ToolTip="{Binding Activity.Description}" Tag="Rand"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/regex.png" ToolTip="{Binding Activity.Description}" Tag="REGEX"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/stat.png" ToolTip="{Binding Activity.Description}" Tag="STAT"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/strftime.png" ToolTip="{Binding Activity.Description}" Tag="STRFTIME"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/URLENCODE.png" ToolTip="{Binding Activity.Description}" Tag="URLENCODE"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/URLDECODE.png" ToolTip="{Binding Activity.Description}" Tag="URLDECODE"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/AES_ENCRYPT.png" ToolTip="{Binding Activity.Description}" Tag="AES_ENCRYPT"  IsHitTestVisible="false"></Image>
+            <Image Source="/Resources/Activities/Utils/AES_DECRYPT.png" ToolTip="{Binding Activity.Description}" Tag="AES_DECRYPT"  IsHitTestVisible="false"></Image>
+
+
+
+        </ItemsControl.Items>
+    </s:Toolbox>
+</ResourceDictionary>

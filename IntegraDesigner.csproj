@@ -1,0 +1,1448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B437DF5F-20E0-4082-A92E-5C1D9C31A8E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntegraDesigner</RootNamespace>
+    <AssemblyName>IntegraDesigner</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>Resources\Activities\General\app.ico</ApplicationIcon>
+    <StartupObject>IntegraDesigner.App</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Temp\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="DialPlanV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ApplicationToolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Connection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\DesignerItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\ChannelRedirectProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\ConfBridgeProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\SipRemoveHeaderProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\SipAddHeaderProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\PageProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\OriginateProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\DISAProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\SendFAXProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\ARRAYProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\DBExistsProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\DBDeleteProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\DBGetProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\DBPutProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\includeProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\FILTERProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\AGIProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\AMDProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\MessageSendProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\ForkCDRProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\UnPauseQueueMemberProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\PauseQueueMemberProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\RingingProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\LogProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Integra\SetCDRamaflagsProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\ProgressProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\PickupProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\ControlPlaybackProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\MusicOnHoldProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\RetryDialProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\SendDTMFProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\StopPlayTonesProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\UserEventProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\TransferProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\StartMusicOnHoldProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\StopMusicOnHoldProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\AES_ENCRYPTProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\AES_DECRYPTProperty.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\URLDECODEProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\URLENCODEProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\B64ENCODEProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\B64DECODEProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\STRFTIMEProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\STATProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\REGEXProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\RandProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\MATHProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\LENProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\FieldqtyProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Utils\CUTProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\IFProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\isnullProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Integra\SetCDRUserfieldProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\SetCallerIDProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\SetLanguageProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\SetMOHProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\VOLUMEProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Stencils\Utils.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Stencils\Integra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\GotoIfTimeProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\SayDigitsProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\SayNumberProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\SayPhoneticProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\SayUnixTimeProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\SayAlphaProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\PlayTonesProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\PlayBackProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Sounds\BackGroundProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\MonitorProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\MixMonitorProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\ExtenSpyProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\ChanSpyProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\CURLProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\AuthenticateProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\BusyProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\AnswerProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\ConectionProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\DialProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\ReceiveFAXProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\FlashProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\EndWhileProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Integra\StartActivityProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\HangupProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\MeetMeProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\QueueProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\ReadProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\SetCallerPresProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\VoiceMailProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Calls\VoiceMailMainProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\GotoProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\GotoIfProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\SetProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\CVariables\WhileProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\NoCDRProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\NoOpProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\SendURLProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\SystemExecProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\WaitProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\RecordProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\StopMixMonitorProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\Recording\StopMonitorProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Properties\General\VMAutenticateProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Stencils\Sounds.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Stencils\Recording.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Stencils\General.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Stencils\CVariables.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Stencils\Calls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\ScrollBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\Shared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Styles\ToolBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Toolbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ToolboxItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Activities\Calls\ChannelRedirect.cs" />
+    <Compile Include="Activities\Calls\ConfBridge.cs" />
+    <Compile Include="Activities\Calls\SipRemoveHeader.cs" />
+    <Compile Include="Activities\Calls\SipAddHeader.cs" />
+    <Compile Include="Activities\Calls\Page.cs" />
+    <Compile Include="Activities\Calls\Originate.cs" />
+    <Compile Include="Activities\Calls\DISA.cs" />
+    <Compile Include="Activities\Calls\SendFAX.cs" />
+    <Compile Include="Activities\CVariables\ARRAY.cs" />
+    <Compile Include="Activities\CVariables\DBExists.cs" />
+    <Compile Include="Activities\CVariables\DBDelete.cs" />
+    <Compile Include="Activities\CVariables\DBGet.cs" />
+    <Compile Include="Activities\CVariables\DBPut.cs" />
+    <Compile Include="Activities\CVariables\FILTER.cs" />
+    <Compile Include="Activities\CVariables\include.cs" />
+    <Compile Include="Activities\General\MessageSend.cs" />
+    <Compile Include="Activities\General\ForkCDR.cs" />
+    <Compile Include="Activities\General\UnPauseQueueMember.cs" />
+    <Compile Include="Activities\General\PauseQueueMember.cs" />
+    <Compile Include="Activities\Recording\ControlPlayback.cs" />
+    <Compile Include="Activities\Utils\AES_ENCRYPT.cs" />
+    <Compile Include="Activities\Utils\AES_DECRYPT.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\ChannelRedirectProperty.xaml.cs">
+      <DependentUpon>ChannelRedirectProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\ConfBridgeProperty.xaml.cs">
+      <DependentUpon>ConfBridgeProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\SipRemoveHeaderProperty.xaml.cs">
+      <DependentUpon>SipRemoveHeaderProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\SipAddHeaderProperty.xaml.cs">
+      <DependentUpon>SipAddHeaderProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\PageProperty.xaml.cs">
+      <DependentUpon>PageProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\OriginateProperty.xaml.cs">
+      <DependentUpon>OriginateProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\DISAProperty.xaml.cs">
+      <DependentUpon>DISAProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\SendFAXProperty.xaml.cs">
+      <DependentUpon>SendFAXProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\ARRAYProperty.xaml.cs">
+      <DependentUpon>ARRAYProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\DBExistsProperty.xaml.cs">
+      <DependentUpon>DBExistsProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\DBDeleteProperty.xaml.cs">
+      <DependentUpon>DBDeleteProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\DBGetProperty.xaml.cs">
+      <DependentUpon>DBGetProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\DBPutProperty.xaml.cs">
+      <DependentUpon>DBPutProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\includeProperty.xaml.cs">
+      <DependentUpon>includeProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\FILTERProperty.xaml.cs">
+      <DependentUpon>FILTERProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\MessageSendProperty.xaml.cs">
+      <DependentUpon>MessageSendProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\ForkCDRProperty.xaml.cs">
+      <DependentUpon>ForkCDRProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\UnPauseQueueMemberProperty.xaml.cs">
+      <DependentUpon>UnPauseQueueMemberProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\PauseQueueMemberProperty.xaml.cs">
+      <DependentUpon>PauseQueueMemberProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\ControlPlaybackProperty.xaml.cs">
+      <DependentUpon>ControlPlaybackProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\AES_ENCRYPTProperty.xaml.cs">
+      <DependentUpon>AES_ENCRYPTProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\AES_DECRYPTProperty.xaml.cs">
+      <DependentUpon>AES_DECRYPTProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\Calls\AMD.cs" />
+    <Compile Include="Activities\Calls\Answer.cs" />
+    <Compile Include="Activities\Calls\Busy.cs" />
+    <Compile Include="Activities\Calls\Dial.cs" />
+    <Compile Include="Activities\Calls\ReceiveFAX.cs" />
+    <Compile Include="Activities\Calls\Flash.cs" />
+    <Compile Include="Activities\Calls\Hangup.cs" />
+    <Compile Include="Activities\Calls\MeetMe.cs" />
+    <Compile Include="Activities\Calls\Pickup.cs" />
+    <Compile Include="Activities\Calls\Progress.cs" />
+    <Compile Include="Activities\Calls\Queue.cs" />
+    <Compile Include="Activities\Calls\RetryDial.cs" />
+    <Compile Include="Activities\Calls\Ringing.cs" />
+    <Compile Include="Activities\Calls\SendDTMF.cs" />
+    <Compile Include="Activities\Calls\SetCallerID.cs" />
+    <Compile Include="Activities\Calls\SetCallerPres.cs" />
+    <Compile Include="Activities\Calls\Transfer.cs" />
+    <Compile Include="Activities\General\AGI.cs" />
+    <Compile Include="Activities\General\Log.cs" />
+    <Compile Include="Activities\General\UserEvent.cs" />
+    <Compile Include="Activities\Sounds\MusicOnHold.cs" />
+    <Compile Include="Activities\Sounds\StartMusicOnHold.cs" />
+    <Compile Include="Activities\Sounds\StopMusicOnHold.cs" />
+    <Compile Include="Activities\Sounds\StopPlayTones.cs" />
+    <Compile Include="Activities\Calls\VoiceMail.cs" />
+    <Compile Include="Activities\Calls\VoiceMailMain.cs" />
+    <Compile Include="Activities\Calls\VOLUME.cs" />
+    <Compile Include="Activities\CVariables\IF.cs" />
+    <Compile Include="Activities\CVariables\isnull.cs" />
+    <Compile Include="Activities\CVariables\SetLanguage.cs" />
+    <Compile Include="Activities\CVariables\SetMOH.cs" />
+    <Compile Include="Activities\General\NoCDR.cs" />
+    <Compile Include="Activities\CVariables\EndWhile.cs" />
+    <Compile Include="Activities\CVariables\Goto.cs" />
+    <Compile Include="Activities\CVariables\GotoIf.cs" />
+    <Compile Include="Activities\CVariables\GotoIfTime.cs" />
+    <Compile Include="Activities\Calls\Read.cs" />
+    <Compile Include="Activities\CVariables\Set.cs" />
+    <Compile Include="Activities\CVariables\While.cs" />
+    <Compile Include="Activities\General\Authenticate.cs" />
+    <Compile Include="Activities\General\CURL.cs" />
+    <Compile Include="Activities\General\NoOp.cs" />
+    <Compile Include="Activities\General\SendURL.cs" />
+    <Compile Include="Activities\Integra\SetCDRamaflags.cs" />
+    <Compile Include="Activities\Integra\StartActivity.cs" />
+    <Compile Include="Activities\General\SystemExec.cs" />
+    <Compile Include="Activities\General\VMAutenticate.cs" />
+    <Compile Include="Activities\General\Wait.cs" />
+    <Compile Include="Activities\IActivity.cs" />
+    <Compile Include="Activities\Integra\SetCDRUserfield.cs" />
+    <Compile Include="Activities\Recording\ChanSpy.cs" />
+    <Compile Include="Activities\Recording\ExtenSpy.cs" />
+    <Compile Include="Activities\Recording\MixMonitor.cs" />
+    <Compile Include="Activities\Recording\Monitor.cs" />
+    <Compile Include="Activities\Recording\Record.cs" />
+    <Compile Include="Activities\Recording\StopMixMonitor.cs" />
+    <Compile Include="Activities\Recording\StopMonitor.cs" />
+    <Compile Include="Activities\Sounds\BackGround.cs" />
+    <Compile Include="Activities\Sounds\PlayBack.cs" />
+    <Compile Include="Activities\Sounds\PlayTones.cs" />
+    <Compile Include="Activities\Sounds\SayAlpha.cs" />
+    <Compile Include="Activities\Sounds\SayDigits.cs" />
+    <Compile Include="Activities\Sounds\SayNumber.cs" />
+    <Compile Include="Activities\Sounds\SayPhonetic.cs" />
+    <Compile Include="Activities\Sounds\SayUnixTime.cs" />
+    <Compile Include="Activities\Utils\B64DECODE.cs" />
+    <Compile Include="Activities\Utils\B64ENCODE.cs" />
+    <Compile Include="Activities\Utils\CUT.cs" />
+    <Compile Include="Activities\Utils\Fieldqty.cs" />
+    <Compile Include="Activities\Utils\LEN.cs" />
+    <Compile Include="Activities\Utils\MATH.cs" />
+    <Compile Include="Activities\Utils\Rand.cs" />
+    <Compile Include="Activities\Utils\REGEX.cs" />
+    <Compile Include="Activities\Utils\STAT.cs" />
+    <Compile Include="Activities\Utils\STRFTIME.cs" />
+    <Compile Include="Activities\Utils\URLDECODE.cs" />
+    <Compile Include="Activities\Utils\URLENCODE.cs" />
+    <Compile Include="Core\Connection.cs" />
+    <Compile Include="Core\ConnectionAdorner.cs" />
+    <Compile Include="Core\Connector.cs" />
+    <Compile Include="Core\ConnectorAdorner.cs" />
+    <Compile Include="Core\Dialplan.cs" />
+    <Compile Include="Core\DialPlanBuilder.cs" />
+    <Compile Include="Core\dialplanPK.cs" />
+    <Compile Include="Core\DragThumb.cs" />
+    <Compile Include="Core\RelativePositionPanel.cs" />
+    <Compile Include="Core\ResizeThumb.cs" />
+    <Compile Include="Core\DesignerCanvas.Commands.cs" />
+    <Compile Include="Core\DesignerCanvas.cs" />
+    <Compile Include="Core\DesignerItem.cs" />
+    <Compile Include="Core\IGroupable.cs" />
+    <Compile Include="Core\ISelectable.cs" />
+    <Compile Include="Core\PathFinder.cs" />
+    <Compile Include="Core\StringWriterWithEncoding.cs" />
+    <Compile Include="Core\XMLObjectConverter.cs" />
+    <Compile Include="DialPlanV.xaml.cs">
+      <DependentUpon>DialPlanV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Core\RubberbandAdorner.cs" />
+    <Compile Include="Core\SelectionService.cs" />
+    <Compile Include="Core\Toolbox.cs" />
+    <Compile Include="Core\ToolboxItem.cs" />
+    <Compile Include="Resources\Properties\General\AGIProperty.xaml.cs">
+      <DependentUpon>AGIProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\AMDProperty.xaml.cs">
+      <DependentUpon>AMDProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\RingingProperty.xaml.cs">
+      <DependentUpon>RingingProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\LogProperty.xaml.cs">
+      <DependentUpon>LogProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Integra\SetCDRamaflagsProperty.xaml.cs">
+      <DependentUpon>SetCDRamaflagsProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\ProgressProperty.xaml.cs">
+      <DependentUpon>ProgressProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\PickupProperty.xaml.cs">
+      <DependentUpon>PickupProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\MusicOnHoldProperty.xaml.cs">
+      <DependentUpon>MusicOnHoldProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\RetryDialProperty.xaml.cs">
+      <DependentUpon>RetryDialProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\SendDTMFProperty.xaml.cs">
+      <DependentUpon>SendDTMFProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\StopPlayTonesProperty.xaml.cs">
+      <DependentUpon>StopPlayTonesProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\UserEventProperty.xaml.cs">
+      <DependentUpon>UserEventProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\TransferProperty.xaml.cs">
+      <DependentUpon>TransferProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\StartMusicOnHoldProperty.xaml.cs">
+      <DependentUpon>StartMusicOnHoldProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\StopMusicOnHoldProperty.xaml.cs">
+      <DependentUpon>StopMusicOnHoldProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\URLDECODEProperty.xaml.cs">
+      <DependentUpon>URLDECODEProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\URLENCODEProperty.xaml.cs">
+      <DependentUpon>URLENCODEProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\B64ENCODEProperty.xaml.cs">
+      <DependentUpon>B64ENCODEProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\B64DECODEProperty.xaml.cs">
+      <DependentUpon>B64DECODEProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\STRFTIMEProperty.xaml.cs">
+      <DependentUpon>STRFTIMEProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\STATProperty.xaml.cs">
+      <DependentUpon>STATProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\REGEXProperty.xaml.cs">
+      <DependentUpon>REGEXProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\RandProperty.xaml.cs">
+      <DependentUpon>RandProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\MATHProperty.xaml.cs">
+      <DependentUpon>MATHProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\LENProperty.xaml.cs">
+      <DependentUpon>LENProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\FieldqtyProperty.xaml.cs">
+      <DependentUpon>FieldqtyProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Utils\CUTProperty.xaml.cs">
+      <DependentUpon>CUTProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\GotoIfTimeProperty.xaml.cs">
+      <DependentUpon>GotoIfTimeProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\IFProperty.xaml.cs">
+      <DependentUpon>IFProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\isnullProperty.xaml.cs">
+      <DependentUpon>isnullProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Integra\SetCDRUserfieldProperty.xaml.cs">
+      <DependentUpon>SetCDRUserfieldProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\SetCallerIDProperty.xaml.cs">
+      <DependentUpon>SetCallerIDProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\SetLanguageProperty.xaml.cs">
+      <DependentUpon>SetLanguageProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\SetMOHProperty.xaml.cs">
+      <DependentUpon>SetMOHProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\SayDigitsProperty.xaml.cs">
+      <DependentUpon>SayDigitsProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\SayNumberProperty.xaml.cs">
+      <DependentUpon>SayNumberProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\SayPhoneticProperty.xaml.cs">
+      <DependentUpon>SayPhoneticProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\SayUnixTimeProperty.xaml.cs">
+      <DependentUpon>SayUnixTimeProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\SayAlphaProperty.xaml.cs">
+      <DependentUpon>SayAlphaProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\PlayTonesProperty.xaml.cs">
+      <DependentUpon>PlayTonesProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\PlayBackProperty.xaml.cs">
+      <DependentUpon>PlayBackProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Sounds\BackGroundProperty.xaml.cs">
+      <DependentUpon>BackGroundProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\MonitorProperty.xaml.cs">
+      <DependentUpon>MonitorProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\MixMonitorProperty.xaml.cs">
+      <DependentUpon>MixMonitorProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\ExtenSpyProperty.xaml.cs">
+      <DependentUpon>ExtenSpyProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\ChanSpyProperty.xaml.cs">
+      <DependentUpon>ChanSpyProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\CURLProperty.xaml.cs">
+      <DependentUpon>CURLProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\AuthenticateProperty.xaml.cs">
+      <DependentUpon>AuthenticateProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\BusyProperty.xaml.cs">
+      <DependentUpon>BusyProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\AnswerProperty.xaml.cs">
+      <DependentUpon>AnswerProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\ConectionProperty.xaml.cs">
+      <DependentUpon>ConectionProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\DialProperty.xaml.cs">
+      <DependentUpon>DialProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\ReceiveFAXProperty.xaml.cs">
+      <DependentUpon>ReceiveFAXProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\FlashProperty.xaml.cs">
+      <DependentUpon>FlashProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\EndWhileProperty.xaml.cs">
+      <DependentUpon>EndWhileProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Integra\StartActivityProperty.xaml.cs">
+      <DependentUpon>StartActivityProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\HangupProperty.xaml.cs">
+      <DependentUpon>HangupProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\MeetMeProperty.xaml.cs">
+      <DependentUpon>MeetMeProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\QueueProperty.xaml.cs">
+      <DependentUpon>QueueProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\ReadProperty.xaml.cs">
+      <DependentUpon>ReadProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\SetCallerPresProperty.xaml.cs">
+      <DependentUpon>SetCallerPresProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\VoiceMailProperty.xaml.cs">
+      <DependentUpon>VoiceMailProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\VoiceMailMainProperty.xaml.cs">
+      <DependentUpon>VoiceMailMainProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\GotoProperty.xaml.cs">
+      <DependentUpon>GotoProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\GotoIfProperty.xaml.cs">
+      <DependentUpon>GotoIfProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\SetProperty.xaml.cs">
+      <DependentUpon>SetProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\CVariables\WhileProperty.xaml.cs">
+      <DependentUpon>WhileProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\NoCDRProperty.xaml.cs">
+      <DependentUpon>NoCDRProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\NoOpProperty.xaml.cs">
+      <DependentUpon>NoOpProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\SendURLProperty.xaml.cs">
+      <DependentUpon>SendURLProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\SystemExecProperty.xaml.cs">
+      <DependentUpon>SystemExecProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\WaitProperty.xaml.cs">
+      <DependentUpon>WaitProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\RecordProperty.xaml.cs">
+      <DependentUpon>RecordProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\StopMixMonitorProperty.xaml.cs">
+      <DependentUpon>StopMixMonitorProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Recording\StopMonitorProperty.xaml.cs">
+      <DependentUpon>StopMonitorProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\General\VMAutenticateProperty.xaml.cs">
+      <DependentUpon>VMAutenticateProperty.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Properties\Calls\VOLUMEProperty.xaml.cs">
+      <DependentUpon>VOLUMEProperty.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\AlignObjectsBottom.png" />
+    <Resource Include="Resources\Images\AlignObjectsCenteredHorizontal.png" />
+    <Resource Include="Resources\Images\AlignObjectsCenteredVertical.png" />
+    <Resource Include="Resources\Images\AlignObjectsLeft.png" />
+    <Resource Include="Resources\Images\AlignObjectsRight.png" />
+    <Resource Include="Resources\Images\AlignObjectsTop.png" />
+    <Resource Include="Resources\Images\BringForward.png" />
+    <Resource Include="Resources\Images\BringToFront.png" />
+    <Resource Include="Resources\Images\Copy.png" />
+    <Resource Include="Resources\Images\Cut.png" />
+    <Resource Include="Resources\Images\Delete.png" />
+    <Resource Include="Resources\Images\DistributeObjectsHorizontal.png" />
+    <Resource Include="Resources\Images\DistributeObjectsVertical.png" />
+    <Resource Include="Resources\Images\GenericDocument.png" />
+    <Resource Include="Resources\Images\Group.png" />
+    <Resource Include="Resources\Images\OpenFolder.png" />
+    <Resource Include="Resources\Images\PasteBig.png" />
+    <Resource Include="Resources\Images\Paste.png" />
+    <Resource Include="Resources\Images\Print.png" />
+    <Resource Include="Resources\Images\Save.png" />
+    <Resource Include="Resources\Images\SendBackward.png" />
+    <Resource Include="Resources\Images\SendToBack.png" />
+    <Resource Include="Resources\Images\Ungroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\Answer.png" />
+    <Resource Include="Resources\Activities\Calls\Busy.png" />
+    <Resource Include="Resources\Activities\Calls\Dial.png" />
+    <Resource Include="Resources\Activities\Calls\Flash.png" />
+    <Resource Include="Resources\Activities\Calls\Hangup.png" />
+    <Resource Include="Resources\Activities\Calls\MeetMe.png" />
+    <Resource Include="Resources\Activities\Calls\Queue.png" />
+    <Resource Include="Resources\Activities\Calls\SetCallerPres.png" />
+    <Resource Include="Resources\Activities\Calls\VoiceMail.png" />
+    <Resource Include="Resources\Activities\Calls\VoiceMailMain.png" />
+    <Resource Include="Resources\Activities\CVariables\EndWhile.png" />
+    <Resource Include="Resources\Activities\CVariables\Goto.png" />
+    <Resource Include="Resources\Activities\CVariables\GotoIf.png" />
+    <Resource Include="Resources\Activities\CVariables\GotoIfTime.png" />
+    <Resource Include="Resources\Activities\Calls\Read.png" />
+    <Resource Include="Resources\Activities\CVariables\Set.png" />
+    <Resource Include="Resources\Activities\CVariables\While.png" />
+    <Resource Include="Resources\Activities\General\app.ico" />
+    <Resource Include="Resources\Activities\General\Authenticate.png" />
+    <Resource Include="Resources\Activities\General\CURL.png" />
+    <Resource Include="Resources\Activities\General\NoOp.png" />
+    <Resource Include="Resources\Activities\General\SendURL.png" />
+    <Resource Include="Resources\Activities\Integra\Start.png" />
+    <Resource Include="Resources\Activities\General\System.png" />
+    <Resource Include="Resources\Activities\General\VMAutenticate.png" />
+    <Resource Include="Resources\Activities\General\Wait.png" />
+    <Resource Include="Resources\Activities\Recording\ExtenSpy.png" />
+    <Resource Include="Resources\Activities\Recording\MixMonitor.png" />
+    <Resource Include="Resources\Activities\Recording\Monitor.png" />
+    <Resource Include="Resources\Activities\Recording\StopMixMonitor.png" />
+    <Resource Include="Resources\Activities\Recording\StopMonitor.png" />
+    <Resource Include="Resources\Activities\Sounds\BackGround.png" />
+    <Resource Include="Resources\Activities\Sounds\PlayBack.png" />
+    <Resource Include="Resources\Activities\Sounds\PlayTones.png" />
+    <Resource Include="Resources\Activities\Sounds\SayAlpha.png" />
+    <Resource Include="Resources\Activities\Sounds\SayDigits.png" />
+    <Resource Include="Resources\Activities\Sounds\SayNumber.png" />
+    <Resource Include="Resources\Activities\Sounds\SayPhonetic.png" />
+    <Resource Include="Resources\Activities\Sounds\SayUnixTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Recording\record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\NoCDR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\ast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\fax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Integra\CDRUserField.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\B64Code.png" />
+    <Resource Include="Resources\Activities\Utils\B64Decode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\CallerID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\Fieldqty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\IF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\isnull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\MOH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\LEN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\Math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\rand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\regex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\stat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\strftime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\VOLUME.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\URLDECODE.png" />
+    <Resource Include="Resources\Activities\Utils\URLENCODE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Integra\CDRama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\Ringing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Sounds\StopPlayTones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\UserEvent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\language.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Recording\ChanSpy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\AMD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\Transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\Log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Sounds\StartMusicOnHold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Sounds\StopMusicOnHold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\Progress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\Pickup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Sounds\MusicOnHold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\RetryDial.png" />
+    <Resource Include="Resources\Activities\Calls\SendDTMF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Config.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\AGI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\ARRAY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\FILTER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\faxout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\include.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\DISA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\Originate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\CVariables\dbdelete.png" />
+    <Resource Include="Resources\Activities\CVariables\dbexists.png" />
+    <Resource Include="Resources\Activities\CVariables\dbget.png" />
+    <Resource Include="Resources\Activities\CVariables\dbput.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\ChannelRedirect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\PauseQueueMember.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\UnPauseQueueMember.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\ConfBridge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\MessageSend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Utils\AES_DECRYPT.png" />
+    <Resource Include="Resources\Activities\Utils\AES_ENCRYPT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\Page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\SipAddHeader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Calls\SipRemoveHeader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\General\ForkCDR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Activities\Recording\ControlPlayback.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

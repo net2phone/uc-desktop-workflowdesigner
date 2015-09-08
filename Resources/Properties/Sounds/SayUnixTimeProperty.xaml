@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.SayUnixTimeProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lbltime" Width="72" >UnixTime:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txttime" Width="254"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lbltz" Width="72">TimeZone:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txttz" Width="255"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblformat" Width="72" >Format:</Label>
+            <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtformat" Width="255"  />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+
+    </StackPanel>
+</UserControl>

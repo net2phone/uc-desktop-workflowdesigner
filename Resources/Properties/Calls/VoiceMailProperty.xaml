@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="IntegraDesigner.Resources.Properties.VoiceMailProperty"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="auto" Width="auto">
+    <StackPanel>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblbox" Width="92" >Box Number:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtbox" Width="128"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblcontext" Width="92" >Context:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtcontext" Width="128"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Canvas.Left="0" Canvas.Top="30" Height="25" Name="lblflags" Width="92" >Flags:</Label>
+                <TextBox Canvas.Left="79" Canvas.Top="59" Height="23" Name="txtflags" Width="128"  />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Description:" Width="82"></TextBlock>
+            <TextBox x:Name="txtdesc" Width="624" Margin="10,0,0,0"></TextBox>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
