@@ -1,4 +1,3 @@
-# integradesigner
-Integra Workflow Designer for Asterisk
 
-http://www.integraccs.com
+net2phone Dialplan Builder (former Integra Workflow Designer) for Asterisk
+
